@@ -1,0 +1,999 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/App.css":
+/*!***********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/App.css ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* Styles go here */\r\nimg {\r\n   height: 200px;\r\n   width: 100px;\r\n}\r\n\r\ndiv {\r\n   color: black;\r\n}\r\n\r\nli {\r\n   margin-right: 20px;\r\n   padding-right: 200px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/encoding/lib sync recursive":
+/*!****************************************!*\
+  !*** ./node_modules/encoding/lib sync ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = "./node_modules/encoding/lib sync recursive";
+
+/***/ }),
+
+/***/ "./src/abis/Meme.json":
+/*!****************************!*\
+  !*** ./src/abis/Meme.json ***!
+  \****************************/
+/*! exports provided: contractName, abi, bytecode, deployedBytecode, sourceMap, deployedSourceMap, source, sourcePath, ast, legacyAST, compiler, networks, schemaVersion, updatedAt, devdoc, userdoc, default */
+/***/ (function(module) {
+
+module.exports = {"contractName":"Meme","abi":[{"constant":false,"inputs":[{"name":"_memeHash","type":"string"}],"name":"set","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function","signature":"0x4ed3885e"},{"constant":true,"inputs":[],"name":"get","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function","signature":"0x6d4ce63c"}],"bytecode":"0x608060405234801561001057600080fd5b50610336806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634ed3885e146100515780636d4ce63c14610119575b600080fd5b34801561005d57600080fd5b506101176004803603602081101561007457600080fd5b810190808035906020019064010000000081111561009157600080fd5b8201836020820111156100a357600080fd5b803590602001918460018302840111640100000000831117156100c557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101a9565b005b34801561012557600080fd5b5061012e6101c3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561016e578082015181840152602081019050610153565b50505050905090810190601f16801561019b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b80600090805190602001906101bf929190610265565b5050565b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561025b5780601f106102305761010080835404028352916020019161025b565b820191906000526020600020905b81548152906001019060200180831161023e57829003601f168201915b5050505050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102a657805160ff19168380011785556102d4565b828001600101855582156102d4579182015b828111156102d35782518255916020019190600101906102b8565b5b5090506102e191906102e5565b5090565b61030791905b808211156103035760008160009055506001016102eb565b5090565b9056fea165627a7a72305820822f7912103260a282cbbad9a6709de2147610c24d73ee62599e6c87e115e60b0029","deployedBytecode":"0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634ed3885e146100515780636d4ce63c14610119575b600080fd5b34801561005d57600080fd5b506101176004803603602081101561007457600080fd5b810190808035906020019064010000000081111561009157600080fd5b8201836020820111156100a357600080fd5b803590602001918460018302840111640100000000831117156100c557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101a9565b005b34801561012557600080fd5b5061012e6101c3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561016e578082015181840152602081019050610153565b50505050905090810190601f16801561019b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b80600090805190602001906101bf929190610265565b5050565b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561025b5780601f106102305761010080835404028352916020019161025b565b820191906000526020600020905b81548152906001019060200180831161023e57829003601f168201915b5050505050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102a657805160ff19168380011785556102d4565b828001600101855582156102d4579182015b828111156102d35782518255916020019190600101906102b8565b5b5090506102e191906102e5565b5090565b61030791905b808211156103035760008160009055506001016102eb565b5090565b9056fea165627a7a72305820822f7912103260a282cbbad9a6709de2147610c24d73ee62599e6c87e115e60b0029","sourceMap":"26:270:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:270:0;;;;;;;","deployedSourceMap":"26:270:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;97:84;;8:9:-1;5:2;;;30:1;27;20:12;5:2;97:84:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;97:84:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;97:84:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;97:84:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;97:84:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;97:84:0;;;;;;;;;;;;;;;;;;208:85;;8:9:-1;5:2;;;30:1;27;20:12;5:2;208:85:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;208:85:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;97:84;164:9;153:8;:20;;;;;;;;;;;;:::i;:::-;;97:84;:::o;208:85::-;244:13;277:8;270:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;208:85;:::o;26:270::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o","source":"pragma solidity 0.5.0;\r\n\r\ncontract Meme {\r\n    string memeHash;\r\n    \r\n    //Write Function\r\n    function set(string memory _memeHash) public {\r\n        memeHash = _memeHash;\r\n    }\r\n    //Read Function\r\n    function get() public view returns (string memory) {\r\n        return memeHash;\r\n    }\r\n}","sourcePath":"C:/Users/Asus/OneDrive/Desktop/meme/src/contracts/Meme.sol","ast":{"absolutePath":"/C/Users/Asus/OneDrive/Desktop/meme/src/contracts/Meme.sol","exportedSymbols":{"Meme":[22]},"id":23,"nodeType":"SourceUnit","nodes":[{"id":1,"literals":["solidity","0.5",".0"],"nodeType":"PragmaDirective","src":"0:22:0"},{"baseContracts":[],"contractDependencies":[],"contractKind":"contract","documentation":null,"fullyImplemented":true,"id":22,"linearizedBaseContracts":[22],"name":"Meme","nodeType":"ContractDefinition","nodes":[{"constant":false,"id":3,"name":"memeHash","nodeType":"VariableDeclaration","scope":22,"src":"47:15:0","stateVariable":true,"storageLocation":"default","typeDescriptions":{"typeIdentifier":"t_string_storage","typeString":"string"},"typeName":{"id":2,"name":"string","nodeType":"ElementaryTypeName","src":"47:6:0","typeDescriptions":{"typeIdentifier":"t_string_storage_ptr","typeString":"string"}},"value":null,"visibility":"internal"},{"body":{"id":12,"nodeType":"Block","src":"142:39:0","statements":[{"expression":{"argumentTypes":null,"id":10,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"leftHandSide":{"argumentTypes":null,"id":8,"name":"memeHash","nodeType":"Identifier","overloadedDeclarations":[],"referencedDeclaration":3,"src":"153:8:0","typeDescriptions":{"typeIdentifier":"t_string_storage","typeString":"string storage ref"}},"nodeType":"Assignment","operator":"=","rightHandSide":{"argumentTypes":null,"id":9,"name":"_memeHash","nodeType":"Identifier","overloadedDeclarations":[],"referencedDeclaration":5,"src":"164:9:0","typeDescriptions":{"typeIdentifier":"t_string_memory_ptr","typeString":"string memory"}},"src":"153:20:0","typeDescriptions":{"typeIdentifier":"t_string_storage","typeString":"string storage ref"}},"id":11,"nodeType":"ExpressionStatement","src":"153:20:0"}]},"documentation":null,"id":13,"implemented":true,"kind":"function","modifiers":[],"name":"set","nodeType":"FunctionDefinition","parameters":{"id":6,"nodeType":"ParameterList","parameters":[{"constant":false,"id":5,"name":"_memeHash","nodeType":"VariableDeclaration","scope":13,"src":"110:23:0","stateVariable":false,"storageLocation":"memory","typeDescriptions":{"typeIdentifier":"t_string_memory_ptr","typeString":"string"},"typeName":{"id":4,"name":"string","nodeType":"ElementaryTypeName","src":"110:6:0","typeDescriptions":{"typeIdentifier":"t_string_storage_ptr","typeString":"string"}},"value":null,"visibility":"internal"}],"src":"109:25:0"},"returnParameters":{"id":7,"nodeType":"ParameterList","parameters":[],"src":"142:0:0"},"scope":22,"src":"97:84:0","stateMutability":"nonpayable","superFunction":null,"visibility":"public"},{"body":{"id":20,"nodeType":"Block","src":"259:34:0","statements":[{"expression":{"argumentTypes":null,"id":18,"name":"memeHash","nodeType":"Identifier","overloadedDeclarations":[],"referencedDeclaration":3,"src":"277:8:0","typeDescriptions":{"typeIdentifier":"t_string_storage","typeString":"string storage ref"}},"functionReturnParameters":17,"id":19,"nodeType":"Return","src":"270:15:0"}]},"documentation":null,"id":21,"implemented":true,"kind":"function","modifiers":[],"name":"get","nodeType":"FunctionDefinition","parameters":{"id":14,"nodeType":"ParameterList","parameters":[],"src":"220:2:0"},"returnParameters":{"id":17,"nodeType":"ParameterList","parameters":[{"constant":false,"id":16,"name":"","nodeType":"VariableDeclaration","scope":21,"src":"244:13:0","stateVariable":false,"storageLocation":"memory","typeDescriptions":{"typeIdentifier":"t_string_memory_ptr","typeString":"string"},"typeName":{"id":15,"name":"string","nodeType":"ElementaryTypeName","src":"244:6:0","typeDescriptions":{"typeIdentifier":"t_string_storage_ptr","typeString":"string"}},"value":null,"visibility":"internal"}],"src":"243:15:0"},"scope":22,"src":"208:85:0","stateMutability":"view","superFunction":null,"visibility":"public"}],"scope":23,"src":"26:270:0"}],"src":"0:296:0"},"legacyAST":{"absolutePath":"/C/Users/Asus/OneDrive/Desktop/meme/src/contracts/Meme.sol","exportedSymbols":{"Meme":[22]},"id":23,"nodeType":"SourceUnit","nodes":[{"id":1,"literals":["solidity","0.5",".0"],"nodeType":"PragmaDirective","src":"0:22:0"},{"baseContracts":[],"contractDependencies":[],"contractKind":"contract","documentation":null,"fullyImplemented":true,"id":22,"linearizedBaseContracts":[22],"name":"Meme","nodeType":"ContractDefinition","nodes":[{"constant":false,"id":3,"name":"memeHash","nodeType":"VariableDeclaration","scope":22,"src":"47:15:0","stateVariable":true,"storageLocation":"default","typeDescriptions":{"typeIdentifier":"t_string_storage","typeString":"string"},"typeName":{"id":2,"name":"string","nodeType":"ElementaryTypeName","src":"47:6:0","typeDescriptions":{"typeIdentifier":"t_string_storage_ptr","typeString":"string"}},"value":null,"visibility":"internal"},{"body":{"id":12,"nodeType":"Block","src":"142:39:0","statements":[{"expression":{"argumentTypes":null,"id":10,"isConstant":false,"isLValue":false,"isPure":false,"lValueRequested":false,"leftHandSide":{"argumentTypes":null,"id":8,"name":"memeHash","nodeType":"Identifier","overloadedDeclarations":[],"referencedDeclaration":3,"src":"153:8:0","typeDescriptions":{"typeIdentifier":"t_string_storage","typeString":"string storage ref"}},"nodeType":"Assignment","operator":"=","rightHandSide":{"argumentTypes":null,"id":9,"name":"_memeHash","nodeType":"Identifier","overloadedDeclarations":[],"referencedDeclaration":5,"src":"164:9:0","typeDescriptions":{"typeIdentifier":"t_string_memory_ptr","typeString":"string memory"}},"src":"153:20:0","typeDescriptions":{"typeIdentifier":"t_string_storage","typeString":"string storage ref"}},"id":11,"nodeType":"ExpressionStatement","src":"153:20:0"}]},"documentation":null,"id":13,"implemented":true,"kind":"function","modifiers":[],"name":"set","nodeType":"FunctionDefinition","parameters":{"id":6,"nodeType":"ParameterList","parameters":[{"constant":false,"id":5,"name":"_memeHash","nodeType":"VariableDeclaration","scope":13,"src":"110:23:0","stateVariable":false,"storageLocation":"memory","typeDescriptions":{"typeIdentifier":"t_string_memory_ptr","typeString":"string"},"typeName":{"id":4,"name":"string","nodeType":"ElementaryTypeName","src":"110:6:0","typeDescriptions":{"typeIdentifier":"t_string_storage_ptr","typeString":"string"}},"value":null,"visibility":"internal"}],"src":"109:25:0"},"returnParameters":{"id":7,"nodeType":"ParameterList","parameters":[],"src":"142:0:0"},"scope":22,"src":"97:84:0","stateMutability":"nonpayable","superFunction":null,"visibility":"public"},{"body":{"id":20,"nodeType":"Block","src":"259:34:0","statements":[{"expression":{"argumentTypes":null,"id":18,"name":"memeHash","nodeType":"Identifier","overloadedDeclarations":[],"referencedDeclaration":3,"src":"277:8:0","typeDescriptions":{"typeIdentifier":"t_string_storage","typeString":"string storage ref"}},"functionReturnParameters":17,"id":19,"nodeType":"Return","src":"270:15:0"}]},"documentation":null,"id":21,"implemented":true,"kind":"function","modifiers":[],"name":"get","nodeType":"FunctionDefinition","parameters":{"id":14,"nodeType":"ParameterList","parameters":[],"src":"220:2:0"},"returnParameters":{"id":17,"nodeType":"ParameterList","parameters":[{"constant":false,"id":16,"name":"","nodeType":"VariableDeclaration","scope":21,"src":"244:13:0","stateVariable":false,"storageLocation":"memory","typeDescriptions":{"typeIdentifier":"t_string_memory_ptr","typeString":"string"},"typeName":{"id":15,"name":"string","nodeType":"ElementaryTypeName","src":"244:6:0","typeDescriptions":{"typeIdentifier":"t_string_storage_ptr","typeString":"string"}},"value":null,"visibility":"internal"}],"src":"243:15:0"},"scope":22,"src":"208:85:0","stateMutability":"view","superFunction":null,"visibility":"public"}],"scope":23,"src":"26:270:0"}],"src":"0:296:0"},"compiler":{"name":"solc","version":"0.5.0+commit.1d4f565a.Emscripten.clang"},"networks":{"5777":{"events":{},"links":{},"address":"0x4EbD40E8161ea80DaC7F427CfF954F18E18F8dD0","transactionHash":"0x7d3d368484fc32f930d29c90b1d3a4582b9fd1fe2e6eada2cd018186ac330a2c"}},"schemaVersion":"3.0.2","updatedAt":"2022-04-12T11:15:02.859Z","devdoc":{"methods":{}},"userdoc":{"methods":{}}};
+
+/***/ }),
+
+/***/ "./src/components/App.css":
+/*!********************************!*\
+  !*** ./src/components/App.css ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/App.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/App.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/App.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/App.js":
+/*!*******************************!*\
+  !*** ./src/components/App.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(Buffer) {/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var web3__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! web3 */ "./node_modules/web3/dist/web3.umd.js");
+/* harmony import */ var web3__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(web3__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _abis_Meme_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../abis/Meme.json */ "./src/abis/Meme.json");
+var _abis_Meme_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../abis/Meme.json */ "./src/abis/Meme.json", 1);
+/* harmony import */ var ipfs_http_client__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ipfs-http-client */ "./node_modules/ipfs-http-client/cjs/src/index.js");
+/* harmony import */ var ipfs_http_client__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(ipfs_http_client__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./App.css */ "./src/components/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_12__);
+
+
+
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Asus\\OneDrive\\Desktop\\meme\\src\\components\\App.js";
+
+
+
+
+ // const ipfsClient = require("ipfs-http-client");
+
+var ipfs = Object(ipfs_http_client__WEBPACK_IMPORTED_MODULE_11__["create"])({
+  host: "ipfs.infura.io",
+  port: 5001,
+  protocol: "https"
+}); // leaving out the arguments will default to these values
+
+var App =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(App, _Component);
+
+  Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_6__["default"])(App, [{
+    key: "componentWillMount",
+    value: function () {
+      var _componentWillMount = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return this.loadWeb3();
+
+              case 2:
+                _context.next = 4;
+                return this.loadBlockchainData();
+
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function componentWillMount() {
+        return _componentWillMount.apply(this, arguments);
+      }
+
+      return componentWillMount;
+    }() // Get the account
+    // Get the network
+    // Get Smart Contract
+    // ---> ABI: Meme.abi
+    // ---> Address: networkData.address
+    // Get Meme Hash
+
+  }, {
+    key: "loadBlockchainData",
+    value: function () {
+      var _loadBlockchainData = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee2() {
+        var web3, accounts, networkId, networkData, abi, address, contract, memeHash;
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                web3 = window.web3;
+                _context2.next = 3;
+                return web3.eth.getAccounts();
+
+              case 3:
+                accounts = _context2.sent;
+                this.setState({
+                  account: accounts[0]
+                });
+                _context2.next = 7;
+                return web3.eth.net.getId();
+
+              case 7:
+                networkId = _context2.sent;
+                // console.log(networkId);
+                networkData = _abis_Meme_json__WEBPACK_IMPORTED_MODULE_10__.networks[networkId];
+
+                if (!networkData) {
+                  _context2.next = 20;
+                  break;
+                }
+
+                abi = _abis_Meme_json__WEBPACK_IMPORTED_MODULE_10__.abi;
+                address = networkData.address;
+                contract = web3.eth.Contract(abi, address);
+                this.setState({
+                  contract: contract
+                });
+                _context2.next = 16;
+                return contract.methods.get().call();
+
+              case 16:
+                memeHash = _context2.sent;
+                this.setState({
+                  memeHash: memeHash
+                });
+                _context2.next = 21;
+                break;
+
+              case 20:
+                window.alert("Smart contract not deployed to detected network!");
+
+              case 21:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function loadBlockchainData() {
+        return _loadBlockchainData.apply(this, arguments);
+      }
+
+      return loadBlockchainData;
+    }()
+  }]);
+
+  function App(props) {
+    var _this;
+
+    Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, App);
+
+    _this = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(App).call(this, props));
+
+    _this.captureFile = function (event) {
+      event.preventDefault();
+      console.log("hello");
+      var file = event.target.files[0];
+      var reader = new window.FileReader();
+      reader.readAsArrayBuffer(file);
+
+      reader.onloadend = function () {
+        _this.setState({
+          buffer: Buffer(reader.result)
+        });
+
+        console.log("buffer", _this.state.buffer);
+      };
+    };
+
+    _this.onClick = function (movie) {
+      _this.setState({
+        hold2: 1,
+        remeHash: movie
+      });
+
+      console.log("remeHash", movie);
+    };
+
+    _this.onSubmit =
+    /*#__PURE__*/
+    function () {
+      var _ref = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee3(event) {
+        var result, memeHash;
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                event.preventDefault();
+                console.log("Submitting the form...");
+                _context3.next = 4;
+                return ipfs.add(_this.state.buffer);
+
+              case 4:
+                result = _context3.sent;
+                console.log("IPFS Result", result);
+                memeHash = result.path;
+
+                _this.state.contract.methods.set(memeHash).send({
+                  from: _this.state.account
+                }).then(function (r) {
+                  _this.setState({
+                    memeHash: result.path
+                  });
+                }); // const memeHash = result[0].hash;
+                // this.setState({ memeHash });
+                // if (error) {
+                //    console.error(error);
+                //    return;
+                // }
+
+
+                _this.setState({
+                  hold: 1
+                }); // let nowDate = new Date();
+
+
+                _this.setState({
+                  todos: [].concat(Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_this.state.todos), [memeHash])
+                });
+
+                console.log("memeHash: ", _this.state.memeHash);
+
+              case 11:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }));
+
+      return function (_x) {
+        return _ref.apply(this, arguments);
+      };
+    }();
+
+    _this.onSubmit1 =
+    /*#__PURE__*/
+    function () {
+      var _ref2 = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee4(event) {
+        var result, memeHash;
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                event.preventDefault();
+                console.log("Submitting the form...");
+                _context4.next = 4;
+                return ipfs.add(_this.state.buffer);
+
+              case 4:
+                result = _context4.sent;
+                console.log("IPFS Result", result);
+                memeHash = result.path;
+
+                _this.state.contract.methods.set(memeHash).send({
+                  from: _this.state.account
+                }).then(function (r) {
+                  _this.setState({
+                    memeHash: result.path
+                  });
+                });
+
+                _this.setState({
+                  hold1: 1,
+                  semeHash: memeHash
+                });
+
+                console.log("memeHash1: ", _this.state.semeHash);
+
+              case 10:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4);
+      }));
+
+      return function (_x2) {
+        return _ref2.apply(this, arguments);
+      };
+    }();
+
+    _this.state = {
+      memeHash: "",
+      remeHash: "",
+      semeHash: "",
+      contract: null,
+      // web3: null,
+      buffer: null,
+      account: "",
+      hold: 0,
+      hold1: 0,
+      hold2: 0,
+      todos: []
+    };
+    return _this;
+  }
+
+  Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_6__["default"])(App, [{
+    key: "loadWeb3",
+    value: function () {
+      var _loadWeb = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee5() {
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                if (!window.ethereum) {
+                  _context5.next = 4;
+                  break;
+                }
+
+                window.web3 = new web3__WEBPACK_IMPORTED_MODULE_9___default.a(window.ethereum);
+                _context5.next = 4;
+                return window.ethereum.enable();
+
+              case 4:
+                if (window.web3) {
+                  window.web3 = new web3__WEBPACK_IMPORTED_MODULE_9___default.a(window.web3.currentProvider);
+                } else {
+                  window.alert("Please use metamask!");
+                }
+
+              case 5:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5);
+      }));
+
+      function loadWeb3() {
+        return _loadWeb.apply(this, arguments);
+      }
+
+      return loadWeb3;
+    }()
+  }, {
+    key: "render",
+    // onSubmit2 = async (event) => {
+    //    event.preventDefault();
+    //    console.log("Submitting the form...");
+    //    const result = await ipfs.add(this.state.buffer);
+    //    console.log("IPFS Result", result);
+    //    const memeHash2 = result.path;
+    //    this.state.contract.methods
+    //       .set(memeHash2)
+    //       .send({ from: this.state.account })
+    //       .then((r) => {
+    //          this.setState({ memeHash: memeHash2 });
+    //       });
+    //    this.setState({ hold1: 1 });
+    //    this.setState({ remeHash: memeHash2 });
+    //    console.log("memeHash2: ", this.state.remeHash);
+    // };
+    value: function render() {
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 155
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("nav", {
+        className: "navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 156
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        className: "navbar-brand col-sm-3 col-md-2 mr-0",
+        href: "",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 157
+        },
+        __self: this
+      }, "Distributed Storage System"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
+        className: "navbar-nav px-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 164
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+        className: "nav-item text-nowrap d-none d-sm-none d-sm-block",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 165
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("small", {
+        className: "text-white",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 166
+        },
+        __self: this
+      }, this.state.account)))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "container-fluid mt-5",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 170
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 171
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("main", {
+        role: "main",
+        className: "col-lg-12 d-flex text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 172
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "content mr-auto ml-auto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 173
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 174
+        },
+        __self: this
+      }), this.state.hold === 1 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 189
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 190
+        },
+        __self: this
+      }, "Uploaded Files"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+        style: {
+          display: "inline"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 191
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("b", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 192
+        },
+        __self: this
+      }, "Disclaimer:")), " ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
+        style: {
+          display: "inline"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 194
+        },
+        __self: this
+      }, "Save hash for future access while server is down!")) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ol", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 200
+        },
+        __self: this
+      }, this.state.todos.map(function (movie) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+          key: movie,
+          style: {
+            marginLeft: "200px"
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 203
+          },
+          __self: this
+        }, movie, "           ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+          href: "https://ipfs.io/ipfs/".concat(movie),
+          target: "_blank",
+          rel: "noopener noreferrer",
+          style: {
+            marginLeft: "50px"
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 208
+          },
+          __self: this
+        }, "Fetch Data"));
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 220
+        },
+        __self: this
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 221
+        },
+        __self: this
+      }, "Upload file"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("form", {
+        onSubmit: this.onSubmit,
+        style: {
+          marginTop: "30px"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 222
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+        type: "file",
+        onChange: this.captureFile,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 225
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+        type: "submit",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 226
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+        style: {
+          marginTop: "50px"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 229
+        },
+        __self: this
+      }, "Verify File data"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ol", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 230
+        },
+        __self: this
+      }, this.state.todos.map(function (movie, i) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+          key: movie,
+          style: {
+            marginLeft: "20px",
+            marginTop: "20px"
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 233
+          },
+          __self: this
+        }, "File", i + 1, "           ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+          onClick: function onClick() {
+            return _this2.onClick(movie);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 248
+          },
+          __self: this
+        }, "Fetch & Verify"));
+      })), this.state.hold2 === 1 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("form", {
+        onSubmit: this.onSubmit1,
+        style: {
+          marginTop: "30px"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 256
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+        type: "file",
+        onChange: this.captureFile,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 259
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+        type: "submit",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 260
+        },
+        __self: this
+      })) : null, this.state.hold1 === 1 ? this.state.semeHash === this.state.remeHash ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          marginTop: "30px",
+          color: "green"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 272
+        },
+        __self: this
+      }, "Both files are same") : react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          marginTop: "30px",
+          color: "red"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 277
+        },
+        __self: this
+      }, "Both files are different") : null)))));
+    }
+  }]);
+
+  return App;
+}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/buffer/index.js */ "./node_modules/buffer/index.js").Buffer))
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/App */ "./src/components/App.js");
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./serviceWorker */ "./src/serviceWorker.js");
+var _jsxFileName = "C:\\Users\\Asus\\OneDrive\\Desktop\\meme\\src\\index.js";
+
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}), document.getElementById('root')); // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+
+_serviceWorker__WEBPACK_IMPORTED_MODULE_4__["unregister"]();
+
+/***/ }),
+
+/***/ "./src/serviceWorker.js":
+/*!******************************!*\
+  !*** ./src/serviceWorker.js ***!
+  \******************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read https://bit.ly/CRA-PWA
+var isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.1/8 is considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) { var publicUrl; }
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(function (registration) {
+    registration.onupdatefound = function () {
+      var installingWorker = registration.installing;
+
+      if (installingWorker == null) {
+        return;
+      }
+
+      installingWorker.onstatechange = function () {
+        if (installingWorker.state === 'installed') {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log('New content is available and will be used when all ' + 'tabs for this page are closed. See https://bit.ly/CRA-PWA.'); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log('Content is cached for offline use.'); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(function (error) {
+    console.error('Error during service worker registration:', error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl).then(function (response) {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    var contentType = response.headers.get('content-type');
+
+    if (response.status === 404 || contentType != null && contentType.indexOf('javascript') === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(function (registration) {
+        registration.unregister().then(function () {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(function () {
+    console.log('No internet connection found. App is running in offline mode.');
+  });
+}
+
+function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(function (registration) {
+      registration.unregister();
+    });
+  }
+}
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************!*\
+  !*** multi ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\Asus\OneDrive\Desktop\meme\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\Asus\OneDrive\Desktop\meme\src\index.js */"./src/index.js");
+
+
+/***/ }),
+
+/***/ 1:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 2:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 3:
+/*!************************!*\
+  !*** buffer (ignored) ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 4:
+/*!************************!*\
+  !*** crypto (ignored) ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 5:
+/*!********************************!*\
+  !*** electron-fetch (ignored) ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 6:
+/*!***************************!*\
+  !*** ./streams (ignored) ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 7:
+/*!*******************************!*\
+  !*** ./extend-node (ignored) ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 8:
+/*!*****************************************************!*\
+  !*** ipfs-utils/src/files/glob-source.js (ignored) ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ })
+
+},[[0,"runtime~main",0]]]);
+//# sourceMappingURL=main.chunk.js.map

@@ -1,0 +1,660 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/components/App.js":
+/*!*******************************!*\
+  !*** ./src/components/App.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(Buffer) {/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var web3__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! web3 */ "./node_modules/web3/dist/web3.umd.js");
+/* harmony import */ var web3__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(web3__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _abis_Meme_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../abis/Meme.json */ "./src/abis/Meme.json");
+var _abis_Meme_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../abis/Meme.json */ "./src/abis/Meme.json", 1);
+/* harmony import */ var ipfs_http_client__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ipfs-http-client */ "./node_modules/ipfs-http-client/cjs/src/index.js");
+/* harmony import */ var ipfs_http_client__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(ipfs_http_client__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./App.css */ "./src/components/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_12__);
+
+
+
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Asus\\OneDrive\\Desktop\\meme\\src\\components\\App.js";
+
+
+
+
+ // const ipfsClient = require("ipfs-http-client");
+
+var ipfs = Object(ipfs_http_client__WEBPACK_IMPORTED_MODULE_11__["create"])({
+  host: "ipfs.infura.io",
+  port: 5001,
+  protocol: "https"
+}); // leaving out the arguments will default to these values
+
+var App =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(App, _Component);
+
+  Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_6__["default"])(App, [{
+    key: "componentWillMount",
+    value: function () {
+      var _componentWillMount = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return this.loadWeb3();
+
+              case 2:
+                _context.next = 4;
+                return this.loadBlockchainData();
+
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function componentWillMount() {
+        return _componentWillMount.apply(this, arguments);
+      }
+
+      return componentWillMount;
+    }() // Get the account
+    // Get the network
+    // Get Smart Contract
+    // ---> ABI: Meme.abi
+    // ---> Address: networkData.address
+    // Get Meme Hash
+
+  }, {
+    key: "loadBlockchainData",
+    value: function () {
+      var _loadBlockchainData = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee2() {
+        var web3, accounts, networkId, networkData, abi, address, contract, memeHash;
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                web3 = window.web3;
+                _context2.next = 3;
+                return web3.eth.getAccounts();
+
+              case 3:
+                accounts = _context2.sent;
+                this.setState({
+                  account: accounts[0]
+                });
+                _context2.next = 7;
+                return web3.eth.net.getId();
+
+              case 7:
+                networkId = _context2.sent;
+                // console.log(networkId);
+                networkData = _abis_Meme_json__WEBPACK_IMPORTED_MODULE_10__.networks[networkId];
+
+                if (!networkData) {
+                  _context2.next = 20;
+                  break;
+                }
+
+                abi = _abis_Meme_json__WEBPACK_IMPORTED_MODULE_10__.abi;
+                address = networkData.address;
+                contract = web3.eth.Contract(abi, address);
+                this.setState({
+                  contract: contract
+                });
+                _context2.next = 16;
+                return contract.methods.get().call();
+
+              case 16:
+                memeHash = _context2.sent;
+                this.setState({
+                  memeHash: memeHash
+                });
+                _context2.next = 21;
+                break;
+
+              case 20:
+                window.alert("Smart contract not deployed to detected network!");
+
+              case 21:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function loadBlockchainData() {
+        return _loadBlockchainData.apply(this, arguments);
+      }
+
+      return loadBlockchainData;
+    }()
+  }]);
+
+  function App(props) {
+    var _this;
+
+    Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, App);
+
+    _this = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(App).call(this, props));
+
+    _this.captureFile = function (event) {
+      event.preventDefault();
+      console.log("hello");
+      var file = event.target.files[0];
+      var reader = new window.FileReader();
+      reader.readAsArrayBuffer(file);
+
+      reader.onloadend = function () {
+        _this.setState({
+          buffer: Buffer(reader.result)
+        });
+
+        console.log("buffer", _this.state.buffer);
+      };
+    };
+
+    _this.onClick = function (movie) {
+      _this.setState({
+        hold2: 1,
+        remeHash: movie
+      });
+
+      console.log("remeHash", movie);
+    };
+
+    _this.onSubmit =
+    /*#__PURE__*/
+    function () {
+      var _ref = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee3(event) {
+        var result, memeHash;
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                event.preventDefault();
+                console.log("Submitting the form...");
+                _context3.next = 4;
+                return ipfs.add(_this.state.buffer);
+
+              case 4:
+                result = _context3.sent;
+                console.log("IPFS Result", result);
+                memeHash = result.path;
+
+                _this.state.contract.methods.set(memeHash).send({
+                  from: _this.state.account
+                }).then(function (r) {
+                  _this.setState({
+                    memeHash: result.path
+                  });
+                }); // const memeHash = result[0].hash;
+                // this.setState({ memeHash });
+                // if (error) {
+                //    console.error(error);
+                //    return;
+                // }
+
+
+                _this.setState({
+                  hold: 1
+                }); // let nowDate = new Date();
+
+
+                _this.setState({
+                  todos: [].concat(Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_this.state.todos), [memeHash])
+                });
+
+                console.log("memeHash: ", _this.state.memeHash);
+
+              case 11:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }));
+
+      return function (_x) {
+        return _ref.apply(this, arguments);
+      };
+    }();
+
+    _this.onSubmit1 =
+    /*#__PURE__*/
+    function () {
+      var _ref2 = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee4(event) {
+        var result, memeHash;
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                event.preventDefault();
+                console.log("Submitting the form...");
+                _context4.next = 4;
+                return ipfs.add(_this.state.buffer);
+
+              case 4:
+                result = _context4.sent;
+                console.log("IPFS Result", result);
+                memeHash = result.path;
+
+                _this.state.contract.methods.set(memeHash).send({
+                  from: _this.state.account
+                }).then(function (r) {
+                  _this.setState({
+                    memeHash: result.path
+                  });
+                });
+
+                _this.setState({
+                  hold1: 1,
+                  semeHash: memeHash
+                });
+
+                console.log("memeHash1: ", _this.state.semeHash);
+
+              case 10:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4);
+      }));
+
+      return function (_x2) {
+        return _ref2.apply(this, arguments);
+      };
+    }();
+
+    _this.state = {
+      memeHash: "",
+      remeHash: "",
+      semeHash: "",
+      contract: null,
+      // web3: null,
+      buffer: null,
+      account: "",
+      hold: 0,
+      hold1: 0,
+      hold2: 0,
+      todos: []
+    };
+    return _this;
+  }
+
+  Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_6__["default"])(App, [{
+    key: "loadWeb3",
+    value: function () {
+      var _loadWeb = Object(C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+      /*#__PURE__*/
+      C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee5() {
+        return C_Users_Asus_OneDrive_Desktop_meme_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                if (!window.ethereum) {
+                  _context5.next = 4;
+                  break;
+                }
+
+                window.web3 = new web3__WEBPACK_IMPORTED_MODULE_9___default.a(window.ethereum);
+                _context5.next = 4;
+                return window.ethereum.enable();
+
+              case 4:
+                if (window.web3) {
+                  window.web3 = new web3__WEBPACK_IMPORTED_MODULE_9___default.a(window.web3.currentProvider);
+                } else {
+                  window.alert("Please use metamask!");
+                }
+
+              case 5:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5);
+      }));
+
+      function loadWeb3() {
+        return _loadWeb.apply(this, arguments);
+      }
+
+      return loadWeb3;
+    }()
+  }, {
+    key: "render",
+    // onSubmit2 = async (event) => {
+    //    event.preventDefault();
+    //    console.log("Submitting the form...");
+    //    const result = await ipfs.add(this.state.buffer);
+    //    console.log("IPFS Result", result);
+    //    const memeHash2 = result.path;
+    //    this.state.contract.methods
+    //       .set(memeHash2)
+    //       .send({ from: this.state.account })
+    //       .then((r) => {
+    //          this.setState({ memeHash: memeHash2 });
+    //       });
+    //    this.setState({ hold1: 1 });
+    //    this.setState({ remeHash: memeHash2 });
+    //    console.log("memeHash2: ", this.state.remeHash);
+    // };
+    value: function render() {
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 155
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("nav", {
+        className: "navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 156
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        className: "navbar-brand col-sm-3 col-md-2 mr-0",
+        href: "",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 157
+        },
+        __self: this
+      }, "Distributed Storage System"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
+        className: "navbar-nav px-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 164
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+        className: "nav-item text-nowrap d-none d-sm-none d-sm-block",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 165
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("small", {
+        className: "text-white",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 166
+        },
+        __self: this
+      }, this.state.account)))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "container-fluid mt-5",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 170
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 171
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("main", {
+        role: "main",
+        className: "col-lg-12 d-flex text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 172
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "content mr-auto ml-auto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 173
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 174
+        },
+        __self: this
+      }), this.state.hold === 1 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 189
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 190
+        },
+        __self: this
+      }, "Uploaded Files"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+        style: {
+          display: "inline"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 191
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("b", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 192
+        },
+        __self: this
+      }, "Disclaimer:")), " ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
+        style: {
+          display: "inline"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 194
+        },
+        __self: this
+      }, "Save hash for future access while server is down!")) : null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ol", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 200
+        },
+        __self: this
+      }, this.state.todos.map(function (movie) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+          key: movie,
+          style: {
+            marginLeft: "200px"
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 203
+          },
+          __self: this
+        }, movie, "           ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+          href: "https://ipfs.io/ipfs/".concat(movie),
+          target: "_blank",
+          rel: "noopener noreferrer",
+          style: {
+            marginLeft: "50px"
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 208
+          },
+          __self: this
+        }, "Fetch Data"));
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 220
+        },
+        __self: this
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 221
+        },
+        __self: this
+      }, "Upload file"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("form", {
+        onSubmit: this.onSubmit,
+        style: {
+          marginTop: "30px"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 222
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+        type: "file",
+        onChange: this.captureFile,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 225
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+        type: "submit",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 226
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+        style: {
+          marginTop: "50px"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 229
+        },
+        __self: this
+      }, "Verify File data"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ol", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 230
+        },
+        __self: this
+      }, this.state.todos.map(function (movie, i) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+          key: movie,
+          style: {
+            marginLeft: "20px",
+            marginTop: "20px"
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 233
+          },
+          __self: this
+        }, "File", i + 1, "           ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+          onClick: function onClick() {
+            return _this2.onClick(movie);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 248
+          },
+          __self: this
+        }, "Fetch & Verify"));
+      })), this.state.hold2 === 1 ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("form", {
+        onSubmit: this.onSubmit1,
+        style: {
+          marginTop: "30px"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 256
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+        type: "file",
+        onChange: this.captureFile,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 259
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+        type: "submit",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 260
+        },
+        __self: this
+      })) : null, this.state.hold1 === 1 ? this.state.semeHash === this.state.remeHash ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          marginTop: "30px",
+          color: "green"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 272
+        },
+        __self: this
+      }, "Both files are same") : react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        style: {
+          marginTop: "30px",
+          color: "red"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 277
+        },
+        __self: this
+      }, "Both files are different") : null)))));
+    }
+  }]);
+
+  return App;
+}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/buffer/index.js */ "./node_modules/buffer/index.js").Buffer))
+
+/***/ })
+
+})
+//# sourceMappingURL=main.6be18b23a95ded87d928.hot-update.js.map
