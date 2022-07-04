@@ -3,7 +3,7 @@ import Web3 from "web3";
 import Meme from "../abis/Meme.json";
 import { create } from "ipfs-http-client";
 import "./App.css";
-import { version } from "chai";
+// import { version } from "chai";
 
 // const ipfsClient = require("ipfs-http-client");
 const ipfs = create({
@@ -181,7 +181,41 @@ class App extends Component {
    render() {
       return (
          <div>
-            <nav className='navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow'>
+            {/* landing page */}
+
+            <div class='hero' id='landing'>
+               <div class='navbar'>
+                  <a href='#landing' class='account'>
+                     account: {this.state.account}
+                  </a>
+                  {/* <a href='#landing'>landing</a> */}
+                  <a href='#section1'>Uploading</a>
+                  <a href='#section2'>Verifying</a>
+                  <a href='#section3'>Tracing</a>
+               </div>
+               <div class='content'>
+                  <small>Welcome to our</small>
+                  <h1>
+                     Distributed <br />
+                     Storage System
+                  </h1>
+                  <small className='ur'>powered by Blockchain</small>
+               </div>
+
+               <div class='bubbles'>
+                  <img src={require("./prop/bubble.png")} alt='' />
+                  <img src={require("./prop/bubble.png")} alt='' />
+                  <img src={require("./prop/bubble.png")} alt='' />
+                  <img src={require("./prop/bubble.png")} alt='' />
+                  <img src={require("./prop/bubble.png")} alt='' />
+                  <img src={require("./prop/bubble.png")} alt='' />
+                  <img src={require("./prop/bubble.png")} alt='' />
+               </div>
+            </div>
+
+            {/* landing page end */}
+
+            {/* <nav className='navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow'>
                <a
                   className='navbar-brand col-sm-3 col-md-2 mr-0'
                   href=''
@@ -200,199 +234,205 @@ class App extends Component {
                      </small>
                   </li>
                </ul>
-            </nav>
-            <div className='container-fluid mt-5'>
-               <div className='row'>
-                  <main role='main' className='col-lg-12 d-flex text-center'>
-                     <div className='content mr-auto ml-auto'>
-                        <a href='' target='_blank' rel='noopener noreferrer'>
-                           {/* <img
-                              src={`https://ipfs.io/ipfs/${this.state.memeHash}`}
-                              alt=''
-                           /> */}
-                        </a>
-                        {this.state.hold === 1 ? (
-                           <div>
-                              <h1>Uploaded Files</h1>
-                              <h2 style={{ display: "inline" }}>
-                                 <b>Disclaimer:</b>
-                              </h2>{" "}
-                              <h4 style={{ display: "inline" }}>
-                                 Save hash for future access while server is
-                                 down!
-                              </h4>
-                           </div>
-                        ) : null}
-                        <ol>
-                           {this.state.todos.map((movie, i) => {
-                              return (
-                                 <li
-                                    key={movie}
-                                    style={{
-                                       marginLeft: "200px",
-                                       marginTop: "10px",
-                                    }}>
-                                    {movie}
-                                    {"           "}
-                                    <a
-                                       href={`https://ipfs.io/ipfs/${movie}`}
-                                       target='_blank'
-                                       rel='noopener noreferrer'
-                                       style={{ marginLeft: "50px" }}>
-                                       Fetch Data
-                                    </a>
-                                    <button
-                                       style={{ marginLeft: "50px" }}
-                                       onClick={() =>
-                                          this.setState({ hold3: i })
-                                       }>
-                                       <span>Update</span>
-                                    </button>
-                                    {this.state.hold3 === i ? (
-                                       <form
-                                          onSubmit={(e) => this.onSubmit2(e, i)}
-                                          style={{ marginTop: "30px" }}>
-                                          <input
-                                             className='hell'
-                                             type='file'
-                                             onChange={this.captureFile}
-                                          />
-                                          <input
-                                             className='hell1'
-                                             type='submit'
-                                          />
-                                       </form>
-                                    ) : null}
-                                 </li>
-                              );
-                           })}
-                        </ol>
+            </nav> */}
 
-                        <p>&nbsp;</p>
-                        <h2>Upload File</h2>
-                        <form
-                           onSubmit={this.onSubmit}
-                           style={{ marginTop: "30px" }}>
-                           <input
-                              className='hell'
-                              type='file'
-                              onChange={this.captureFile}
-                           />
-                           <input className='hell1' type='submit' />
-                        </form>
+            <div id='section1'>
+               {this.state.hold === 1 ? (
+                  <div>
+                     <h1>Uploaded Files</h1>
+                     <h2 style={{ display: "inline" }}>
+                        <b>Disclaimer:</b>
+                     </h2>{" "}
+                     <h4 style={{ display: "inline" }}>
+                        Save hash for future access while server is down!
+                     </h4>
+                  </div>
+               ) : null}
+               <ol>
+                  {this.state.todos.map((movie, i) => {
+                     return (
+                        <li
+                           key={movie}
+                           style={{
+                              marginLeft: "500px",
+                              marginTop: "10px",
+                           }}>
+                           {movie}
+                           {"           "}
+                           <a
+                              href={`https://ipfs.io/ipfs/${movie}`}
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              style={{ marginLeft: "50px", color: "white" }}>
+                              Fetch Data
+                           </a>
+                           <button
+                              style={{ marginLeft: "50px" }}
+                              onClick={() => this.setState({ hold3: i })}>
+                              <span>Update</span>
+                           </button>
+                           {this.state.hold3 === i ? (
+                              <form
+                                 onSubmit={(e) => this.onSubmit2(e, i)}
+                                 style={{ marginTop: "30px" }}>
+                                 <input
+                                    className='hell'
+                                    type='file'
+                                    onChange={this.captureFile}
+                                 />
+                                 <input className='hell1' type='submit' />
+                              </form>
+                           ) : null}
+                        </li>
+                     );
+                  })}
+               </ol>
 
-                        <h2 style={{ marginTop: "50px" }}>Verify File data</h2>
-                        <ol>
-                           {this.state.todos.map((movie, i) => {
-                              return (
-                                 <li
-                                    key={movie}
-                                    style={{
-                                       marginLeft: "350px",
-                                       marginTop: "20px",
-                                       width: "500px",
-                                    }}>
-                                    File{i + 1}
-                                    {"           "}
-                                    <button
-                                       style={{
-                                          marginLeft: "50px",
-                                       }}
-                                       onClick={() => this.onClick(movie)}>
-                                       <span>Fetch & Verify</span>
-                                    </button>
-                                 </li>
-                              );
-                           })}
-                        </ol>
+               <p>&nbsp;</p>
+               {/* </div>
+                     </main>
+                  </div>
+               </div> */}
 
-                        {this.state.hold2 === 1 ? (
-                           <form
-                              onSubmit={this.onSubmit1}
-                              style={{ marginTop: "30px" }}>
-                              <input
-                                 className='hell'
-                                 type='file'
-                                 onChange={this.captureFile}
-                              />
-                              <input className='hell1' type='submit' />
-                           </form>
-                        ) : null}
+               <h2>Upload File</h2>
+               <form onSubmit={this.onSubmit} style={{ marginTop: "30px" }}>
+                  <input
+                     className='hell'
+                     type='file'
+                     onChange={this.captureFile}
+                  />
+                  <input className='hell1' type='submit' />
+               </form>
+            </div>
 
-                        {this.state.hold1 === 1 ? (
-                           this.state.semeHash === this.state.remeHash ? (
-                              <div
-                                 onClick={() => this.setState({ hold1: 0 })}
-                                 style={{ marginTop: "10px", color: "green" }}>
-                                 Both files are same
-                              </div>
-                           ) : (
-                              <div
-                                 onClick={() => this.setState({ hold1: 0 })}
-                                 style={{ marginTop: "30px", color: "red" }}>
-                                 Both files are different
-                              </div>
-                           )
-                        ) : null}
-                        <h2 style={{ marginTop: "50px" }}>
-                           Tracing File Version
-                        </h2>
-                        <ol>
-                           {this.state.todos.map((movie, i) => {
-                              return (
-                                 <li
-                                    key={movie}
-                                    style={{
-                                       marginLeft: "350px",
-                                       marginTop: "20px",
-                                       width: "500px",
-                                    }}>
-                                    File{i + 1}
-                                    {"           "}
-                                    <button
-                                       style={{
-                                          marginLeft: "50px",
-                                       }}
-                                       onClick={() => this.onClick1(i)}>
-                                       <span>Trace file history</span>
-                                    </button>
-                                 </li>
-                              );
-                           })}
-                           {this.state.hold4 !== -1
-                              ? this.state.files[
-                                   this.state.todos[this.state.hold4]
-                                ].map((movie, i) => {
-                                   return (
-                                      <div
-                                         key={movie.has}
-                                         style={{
-                                            marginLeft: "350px",
-                                            marginTop: "20px",
-                                         }}>
-                                         {i}. {movie.time.toString()}
-                                         {"           "}
-                                         <span
-                                            onClick={() =>
-                                               this.setState({ hold4: -1 })
-                                            }>
-                                            version{i + 1}
-                                         </span>
-                                         <a
-                                            href={`https://ipfs.io/ipfs/${movie.has}`}
-                                            target='_blank'
-                                            rel='noopener noreferrer'
-                                            style={{ marginLeft: "50px" }}>
-                                            Fetch Data
-                                         </a>
-                                      </div>
-                                   );
-                                })
-                              : null}
-                        </ol>
+            <div id='section2'>
+               <h2 style={{ marginTop: "50px" }}>Verify File data</h2>
+               <ol
+                  style={{
+                     marginLeft: "300px",
+                     marginTop: "10px",
+                  }}>
+                  {this.state.todos.map((movie, i) => {
+                     return (
+                        <li
+                           key={movie}
+                           style={{
+                              marginLeft: "350px",
+                              marginTop: "20px",
+                              width: "500px",
+                           }}>
+                           File{i + 1}
+                           {"           "}
+                           <button
+                              style={{
+                                 marginLeft: "50px",
+                              }}
+                              onClick={() => this.onClick(movie)}>
+                              <span>Fetch & Verify</span>
+                           </button>
+                        </li>
+                     );
+                  })}
+               </ol>
+
+               {this.state.hold2 === 1 ? (
+                  <form onSubmit={this.onSubmit1} style={{ marginTop: "30px" }}>
+                     <input
+                        className='hell'
+                        type='file'
+                        onChange={this.captureFile}
+                     />
+                     <input className='hell1' type='submit' />
+                  </form>
+               ) : null}
+
+               {this.state.hold1 === 1 ? (
+                  this.state.semeHash === this.state.remeHash ? (
+                     <div
+                        onClick={() => this.setState({ hold1: 0 })}
+                        style={{
+                           marginTop: "10px",
+                           color: "orange",
+                           fontSize: "35px",
+                        }}>
+                        Both files are same
                      </div>
-                  </main>
-               </div>
+                  ) : (
+                     <div
+                        onClick={() => this.setState({ hold1: 0 })}
+                        style={{
+                           marginTop: "30px",
+                           color: "red",
+                           fontSize: "35px",
+                        }}>
+                        Both files are different
+                     </div>
+                  )
+               ) : null}
+            </div>
+
+            <div id='section3'>
+               <h2 style={{ marginTop: "50px" }}>Tracing File Version</h2>
+               <ol
+                  style={{
+                     marginLeft: "300px",
+                     marginTop: "10px",
+                  }}>
+                  {this.state.todos.map((movie, i) => {
+                     return (
+                        <li
+                           key={movie}
+                           style={{
+                              marginLeft: "350px",
+                              marginTop: "20px",
+                              width: "500px",
+                           }}>
+                           File{i + 1}
+                           {"           "}
+                           <button
+                              style={{
+                                 marginLeft: "50px",
+                              }}
+                              onClick={() => this.onClick1(i)}>
+                              <span>Trace file history</span>
+                           </button>
+                        </li>
+                     );
+                  })}
+                  {this.state.hold4 !== -1
+                     ? this.state.files[this.state.todos[this.state.hold4]].map(
+                          (movie, i) => {
+                             return (
+                                <div
+                                   key={movie.has}
+                                   style={{
+                                      marginLeft: "50px",
+                                      marginTop: "20px",
+                                   }}>
+                                   {i}. {movie.time.toString()}
+                                   {"           "}
+                                   <span
+                                      onClick={() =>
+                                         this.setState({ hold4: -1 })
+                                      }>
+                                      version{i + 1}
+                                   </span>
+                                   <a
+                                      href={`https://ipfs.io/ipfs/${movie.has}`}
+                                      target='_blank'
+                                      rel='noopener noreferrer'
+                                      style={{
+                                         marginLeft: "50px",
+                                         color: "white",
+                                      }}>
+                                      Fetch Data
+                                   </a>
+                                </div>
+                             );
+                          }
+                       )
+                     : null}
+               </ol>
             </div>
          </div>
       );
